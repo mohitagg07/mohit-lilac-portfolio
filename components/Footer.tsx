@@ -15,21 +15,21 @@ export default function Footer() {
           
           {/* About */}
           <div>
-            <h3 className="font-serif text-2xl mb-4">{footer.tagline}</h3>
-            <p className="text-neutral-400 text-sm leading-relaxed">
+            <h3 className="font-serif text-2xl mb-4 text-white">{footer.tagline}</h3>
+            <p className="text-neutral-300 text-sm leading-relaxed">
               Compassionate, evidence-based therapy for anxiety, trauma, and burnout in Santa Monica, California.
             </p>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-semibold mb-4">Quick Links</h4>
+            <h4 className="font-semibold mb-4 text-white">Quick Links</h4>
             <ul className="space-y-2">
               {['About', 'Services', 'Office', 'FAQ', 'Contact'].map((item) => (
                 <li key={item}>
                   <button
                     onClick={() => document.getElementById(item.toLowerCase())?.scrollIntoView({ behavior: 'smooth' })}
-                    className="text-neutral-400 hover:text-white transition-colors text-sm"
+                    className="text-neutral-300 hover:text-white transition-colors text-sm"
                   >
                     {item}
                   </button>
@@ -40,8 +40,8 @@ export default function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h4 className="font-semibold mb-4">Contact</h4>
-            <div className="space-y-2 text-neutral-400 text-sm">
+            <h4 className="font-semibold mb-4 text-white">Contact</h4>
+            <div className="space-y-2 text-neutral-300 text-sm">
               <p>{footer.address}</p>
               <p className="pt-2">By appointment only</p>
               <p>In-person & Telehealth</p>
@@ -51,16 +51,16 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-neutral-800 pt-8">
+        <div className="border-t border-neutral-700 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-neutral-500 text-sm">
+            <p className="text-neutral-400 text-sm">
               © {currentYear} Dr. Maya Reynolds, PsyD. All rights reserved.
             </p>
-            <p className="text-neutral-600 text-xs">
+            <p className="text-neutral-400 text-xs">
               {footer.license}
             </p>
           </div>
-          <p className="text-neutral-600 text-xs mt-4 text-center md:text-left">
+          <p className="text-neutral-500 text-xs mt-4 text-center md:text-left">
             {footer.disclaimer}
           </p>
         </div>
